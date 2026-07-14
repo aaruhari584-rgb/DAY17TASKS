@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Day 17 - Task 10</title>
+</head>
+<body>
+
+<script>
+
+let correctUsername = "admin";
+let correctPassword = "12345";
+
+for (let i = 1; i <= 3; i++) {
+
+    let username = prompt("Enter Username");
+    let password = prompt("Enter Password");
+
+    if (username == correctUsername && password == correctPassword) {
+        alert("Login Success");
+        break;
+    } else {
+        if (i == 3) {
+            alert("Account Locked");
+        } else {
+            alert("Login Failed. Attempts Left: " + (3 - i));
+        }
+    }
+}
+
+</script>
+
+</body>
+</html>
